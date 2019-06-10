@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/ColCoutts/notes-server#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "eslint": "^5.16.0",
     "jest": "^24.8.0",
     "nodemon": "^1.19.1",
