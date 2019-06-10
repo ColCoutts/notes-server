@@ -2,9 +2,19 @@
   "name": "notes-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --runInBand --verbose",
+    "test:watch": "npm run test -- --watch",
+    "start": "node server.js",
+    "start:watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,11 +28,14 @@
   },
   "homepage": "https://github.com/ColCoutts/notes-server#readme",
   "dependencies": {
-    "dotenv": "^8.0.0",
     "eslint": "^5.16.0",
-    "express": "^4.17.1",
     "jest": "^24.8.0",
-    "mongoose": "^5.5.14",
+    "nodemon": "^1.19.1",
     "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.5.14"
   }
 }
