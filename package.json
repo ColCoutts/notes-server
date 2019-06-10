@@ -1,0 +1,28 @@
+{
+  "name": "notes-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ColCoutts/notes-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ColCoutts/notes-server/issues"
+  },
+  "homepage": "https://github.com/ColCoutts/notes-server#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "eslint": "^5.16.0",
+    "express": "^4.17.1",
+    "jest": "^24.8.0",
+    "mongoose": "^5.5.14",
+    "supertest": "^4.0.2"
+  }
+}
